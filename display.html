@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>OVI</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="banner">
+			<div class="logo">
+				<img src="img/logo.png">
+			</div>
+			<h1>Diseño de sitios web</h1>
+		</div>
+		<nav class="navbar navbar-primary navbar-expand-md navbar-dark bg-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Inicio</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="display.html">Display</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="position.html">Position</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="float.html">Float</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="overflow.html">Overflow</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="acerca.html">Acerca de</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 text-justify">
+				<h2>Display</h2>
+				<p>La propiedad CSSdisplayespecifica el tipo de cuadro de representación utilizado para un elemento. En HTML,  los valores de propiedad  predeterminados display se toman de los comportamientos de los cambios en las especificaciones HTML o de la hoja de estilo predeterminada del navegador / usuario. El valor predeterminado en XML es inline.</p>
+				<p>Además de los Diferentes Tipos de caja de Visualizacion, el valor de nonepermite Desactivar la Visualizacion DE UN Elemento; cuando no se utiliza none, todos los elementos descendentes también quedan desactivados. El documento se procesa como si el elemento no existiera en el árbol de documentos.</p>
+
+				<h3 id="datos" style="margin-top: 20px;">Datos</h3>
+				<table class="table table-datos"> 
+					<tbody>
+						<tr>
+							<th>Definición</th>
+							<td>Establece el tipo de caja generada por un elemento</td>
+						</tr>
+						<tr>
+							<th>Valores <br> permitidos</th>
+							<td>
+								Uno y sólo uno de los siguientes valores:
+								<ul>
+									<li style="float:left;width:25%;margin-right:5%">inline</li>
+									<li style="float:left;width:25%;margin-right:5%">block</li>
+									<li style="float:left;width:25%;margin-right:5%">list-item</li>
+									<li style="float:left;width:25%;margin-right:5%">run-in</li>
+									<li style="float:left;width:25%;margin-right:5%">inline-block</li>
+									<li style="float:left;width:25%;margin-right:5%">table</li>
+									<li style="float:left;width:25%;margin-right:5%">inline-table</li>
+									<li style="float:left;width:25%;margin-right:5%">table-row-group</li>
+									<li style="float:left;width:25%;margin-right:5%">table-header-group</li>
+									<li style="float:left;width:25%;margin-right:5%">table-footer-group</li>
+									<li style="float:left;width:25%;margin-right:5%">table-row</li>
+									<li style="float:left;width:25%;margin-right:5%">table-column-group</li>
+									<li style="float:left;width:25%;margin-right:5%">table-column</li>
+									<li style="float:left;width:25%;margin-right:5%">table-cell</li>
+									<li style="float:left;width:25%;margin-right:5%">table-caption</li>
+									<li style="float:left;width:25%;margin-right:5%">none</li>
+									<li style="float:left;width:25%;margin-right:5%"><a href="./inherit.html">inherit</a></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th>Valor inicial</th>
+							<td>inline</td>
+						</tr>
+						<tr>
+							<th>Se aplica a</th>
+							<td>Todos los elementos</td>
+						</tr>
+						<tr>
+							<th>Válida en</th>
+							<td><a href="./medios.html">todos los medios</a></td>
+						</tr>
+						<tr>
+							<th>Se hereda</th>
+							<td>no</td>
+						</tr>
+						<tr class="nobottom">
+							<th>Definición en<br>el estándar</th>
+							<td><a href="http://www.w3.org/TR/CSS21/visuren.html#propdef-display">w3.org/TR/CSS21/visuren.html#propdef-display</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="uso" style="margin-top: 20px;">Uso</h3>
+				<p>La propiedad display es una de las propiedades CSS más infrautilizadas. Aunque todos los diseñadores conocen esta propiedad y utilizan sus valores inline, block y none, las posibilidades de display son mucho más avanzadas.</p>
+				
+				<p>De hecho, la propiedad display es una de las más complejas de CSS 2.1, ya que establece el tipo de la caja que genera cada elemento. La propiedad display es tan compleja que casi ningún navegador es capaz de mostrar correctamente todos sus valores.</p>
+				<p>El valor más sencillo de display es none que hace que el elemento no genere ninguna caja. El resultado es que el elemento desaparece por completo de la página y no ocupa sitio, por lo que los elementos adyacentes ocupan su lugar. Si se utiliza la propiedad display: none sobre un elemento, todos sus descendientes también desaparecen por completo de la página.</p>
+				<p>Si se quiere hacer un elemento invisible, es decir, que no se vea pero que siga ocupando el mismo sitio, se debe utilizar la propiedad visibility. La propiedad display: none se utiliza habitualmente en aplicaciones web dinámicas creadas con JavaScript y que muestran/ocultan contenidos cuando el usuario realiza alguna acción como pulsar un botón o un enlace.</p>
+				<p>Los otros dos valores más utilizados son block e inline que hacen que la caja de un elemento sea de bloque o en línea respectivamente. El siguiente ejemplo muestra un párrafo y varios enlaces a los que se les ha añadido un borde para mostrar el espacio ocupado por cada caja:</p>
+
+				<h3 id="ejemplo">Ejemplo</h3>
+				<div class="codigo-ejemplo">
+					<p style="border: 2px solid #000; padding: 3px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+
+					<a style="border: 2px dashed #C00; padding: 3px;" href="#">Lorem ipsum</a>
+					<a style="border: 2px dashed #C00; padding: 3px;" href="#">Donec mollis nunc in leo</a>
+					<a style="border: 2px dashed #C00; padding: 3px;" href="#">Vivamus fermentum</a>
+				</div>
+
+				<h3 id="multimedia">Multimedia</h3>
+				<div class="col-xs-12 text-center" style="margin-top: 20px;">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/5BfFMaawz48?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+				<h3 id="referencias" style="margin-top: 50px;">Referencias</h3>
+				<div class="referencias text-left">
+					<ul>
+						<li>
+							MDN web docs - FranciscoCastle (2017, 10, 05). Display. Recuperado de: <a href="https://developer.mozilla.org/es/docs/Web/CSS/display">https://developer.mozilla.org/es/docs/Web/CSS/display</a>.
+						</li>
+						<li>
+							LIBROSWEB. Propiedad display. Recuperado de: <a href="http://librosweb.es/referencia/css/display.html">http://librosweb.es/referencia/css/display.html</a>.
+						</li>
+						<li>
+							Vida MRR (2016, 09, 28). 18. Curso básico de CSS | Uso de la propiedad Display. Recuperado de: <a href="https://www.youtube.com/watch?v=5BfFMaawz48">https://www.youtube.com/watch?v=5BfFMaawz48</a>.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<aside class="col-sm-3 ml-sm-auto">
+				<div class="aside-module">
+					<h4>Menu</h4>
+					<ul class="list-menu">
+						<li>
+							<a class="nav-link" href="#datos">Datos</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#uso">Uso</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#ejemplo">Ejemplo</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#multimedia">Multimedia</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#referencias">Referencias</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+	</div>
+	<footer>
+		<p>Desarrolado por: <b>Sebastian Leiva</b></p>
+		<p>Universidad nacional abierta y a distancia</p>
+		<p>UNAD</p>
+		<p>2017</p>
+		<center><a href="https://www.cerotec.net/estadisticas-112865/sebadl28.github.io" title="más información"><img src="https://www.cerotec.net/contador.php?t=6&s=6&i=112865" alt="Contador de visitas y estadísticas"></a></center>
+	</footer>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

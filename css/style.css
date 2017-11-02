@@ -103,3 +103,18 @@ footer{
 footer p{
 	margin-bottom: 5px;
 }
+
+.table-datos th{
+	background: #F5F5F5;
+}
+
+.codigo-ejemplo, .referencias{
+    background: #F5F5F5;
+    border: 1px solid #F0F0F0;
+    font-family: Consolas,"Liberation Mono","Droid Sans Mono",Monaco,Menlo,"Courier New",Courier,monospace;
+    font-size: 14px;
+    font-size-adjust: .5;
+    margin: 1em 0;
+    overflow: auto;
+    padding: .5em;
+}
