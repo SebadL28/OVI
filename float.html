@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>OVI</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="banner">
+			<div class="logo">
+				<img src="img/logo.png">
+			</div>
+			<h1>Diseño de sitios web</h1>
+		</div>
+		<nav class="navbar navbar-primary navbar-expand-md navbar-dark bg-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="display.html">Display</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="position.html">Position</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="float.html">Float</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="overflow.html">Overflow</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="acerca.html">Acerca de</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 text-justify">
+				<h2>Float</h2>
+				<p>La propiedad float especifica si un elemento debe salir del flujo normal y aparecer a la izquierda o a la derecha de su contenedor, donde los elementos de texto y los en línea aparecerán a su alrededor.</p>
+
+				<ul>
+					<li>valor inicial: ninguno</li>
+					<li>Se aplica a: todos los elementos</li>
+					<li>valor heredado: no</li>
+					<li>Porcentajes:</li>
+					<li>Media: visual</li>
+					<li>valor calculado: como se especifica</li>
+					<li>Un elemento flotante es un elemento en el que el valor calculado de float no es igual a none.</li>
+				</ul>
+
+
+				<h3 id="datos" style="margin-top: 20px;">Datos</h3>
+				<table class="table table-datos"> 
+					<tbody>
+						<tr>
+							<th>Definición</th>
+							<td>Posiciona los elementos de forma flotante</td>
+						</tr>
+						<tr>
+							<th>Valores <br> permitidos</th>
+							<td>
+								Alguno o todos los siguientes valores y en cualquier orden:
+								<ul>
+									<li>left</li>
+									<li>right</li>
+									<li>none</li>
+									<li>inherit</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th>Valor inicial</th>
+							<td>none</td>
+						</tr>
+						<tr>
+							<th>Se aplica a</th>
+							<td>Cualquier elemento que no esté posicionado de forma absoluta</td>
+						</tr>
+						<tr>
+							<th>Válida en</th>
+							<td>medios visuales</td>
+						</tr>
+						<tr>
+							<th>Se hereda</th>
+							<td>no</td>
+						</tr>
+						<tr class="nobottom">
+							<th>Definición en<br>el estándar</th>
+							<td><a href="http://www.w3.org/TR/CSS2/visuren.html#propdef-float">w3.org/TR/CSS2/visuren.html#propdef-float</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="uso" style="margin-top: 20px;">Uso</h3>
+
+				<p>La propiedad float posiciona una caja moviéndola todo lo posible a la izquierda o derecha de su posición original. Los tres valores de esta propiedad se interpretan de la siguiente manera:</p>
+
+				<ul>
+					<li>left, la caja se desplaza todo lo posible a la izquierda de la posición en la que se encontraba. El resto de elementos de la página se adaptan para mostrarse a su derecha (a menos que se indique lo contrario mediante la propiedad clear).</li>
+					<li>right, la caja se desplaza todo lo posible a la derecha de la posición en la que se encontraba. El resto de elementos de la página se adaptan para mostrarse a su izquierda (a menos que se indique lo contrario mediante la propiedad clear).</li>
+					<li>none, la caja no se desplaza respecto de su posición original. Además de ser el valor por defecto de esta propiedad, el valor none se puede utilizar para eliminar el float aplicado a un elemento mediante otros selectores.</li>
+				</ul>
+
+				<h3 id="ejemplo">Ejemplo</h3>
+
+				<p>La principal característica del posicionamiento float es que el resto de elementos de la página se adaptan para fluir alrededor de la caja flotante. En el siguiente ejemplo, se muestra el aspecto por defecto que tendría una página HTML con una imagen y un par de párrafos de texto:</p>
+
+				<div class="codigo-ejemplo">
+					<img src="img/imagen_pequena.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet feugiat justo, vitae feugiat purus. Vivamus aliquam ligula at ornare dignissim. Ut imperdiet rutrum tincidunt. Phasellus rhoncus eros auctor porta vulputate.</p>
+					<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis posuere nibh massa, nec sollicitudin eros vestibulum non. Aliquam pellentesque pharetra tortor ut feugiat. Donec vitae gravida nunc, eget tincidunt magna. Aliquam accumsan et justo quis porttitor.</p>
+				</div>
+
+				<p>La forma en la que se muestran los elementos de la página es la esperada debido al tipo de cada elemento: las imágenes son elementos en línea y los párrafos son elementos de bloque. No obstante, esta forma de mostrar los contenidos es muy diferente a la que se utilizaría en un medio impreso como una revista o un periódico.</p>
+				
+				<p>Aplicando el posicionamiento flotante a la imagen, los contenidos de este ejemplo muestran un aspecto mucho más lógico:</p>
+
+				<div class="codigo-ejemplo">
+					<img src="img/imagen_pequena.png" style="float: left; margin: .25em 1em 1em 0">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet feugiat justo, vitae feugiat purus. Vivamus aliquam ligula at ornare dignissim. Ut imperdiet rutrum tincidunt. Phasellus rhoncus eros auctor porta vulputate.</p>
+					<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis posuere nibh massa, nec sollicitudin eros vestibulum non. Aliquam pellentesque pharetra tortor ut feugiat. Donec vitae gravida nunc, eget tincidunt magna. Aliquam accumsan et justo quis porttitor.</p>
+				</div>
+
+				<h3 id="multimedia">Multimedia</h3>
+				<div class="col-xs-12 text-center" style="margin-top: 20px;">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/VwxGKpvW8Zk?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+				<h3 id="referencias" style="margin-top: 50px;">Referencias</h3>
+				<div class="referencias text-left">
+					<ul>
+						<li>
+							MDN web docs - teoli, fscholz, Mgjbot, Nathymig, HenryGR (2014, 06, 25). Float. Recuperado de: <a href="https://developer.mozilla.org/es/docs/Web/CSS/float">https://developer.mozilla.org/es/docs/Web/CSS/float</a>.
+						</li>
+						<li>
+							LIBROSWEB. Propiedad float. Recuperado de: <a href="http://librosweb.es/referencia/css/float.html">http://librosweb.es/referencia/css/float.html</a>.
+						</li>
+						<li>
+							The Net Ninja (2015, 10, 22). CSS Positioning Tutorial #4 - Floating Elements. Recuperado de: <a href="https://www.youtube.com/watch?v=VwxGKpvW8Zk">https://www.youtube.com/watch?v=VwxGKpvW8Zk</a>.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<aside class="col-sm-3 ml-sm-auto">
+				<div class="aside-module">
+					<h4>Menu</h4>
+					<ul class="list-menu">
+						<li>
+							<a class="nav-link" href="#datos">Datos</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#uso">Uso</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#ejemplo">Ejemplo</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#multimedia">Multimedia</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#referencias">Referencias</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+	</div>
+	<footer>
+		<p>Desarrolado por: <b>Sebastian Leiva</b></p>
+		<p>Universidad nacional abierta y a distancia</p>
+		<p>UNAD</p>
+		<p>2017</p>
+		<center><a href="https://www.cerotec.net/estadisticas-112865/sebadl28.github.io" title="más información"><img src="https://www.cerotec.net/contador.php?t=6&s=6&i=112865" alt="Contador de visitas y estadísticas"></a></center>
+	</footer>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

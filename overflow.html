@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>OVI</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="banner">
+			<div class="logo">
+				<img src="img/logo.png">
+			</div>
+			<h1>Diseño de sitios web</h1>
+		</div>
+		<nav class="navbar navbar-primary navbar-expand-md navbar-dark bg-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="display.html">Display</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="position.html">Position</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="float.html">Float</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="overflow.html">Overflow</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="acerca.html">Acerca de</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8 text-justify">
+				<h2>Overflow</h2>
+				<p>La propiedad CSS overflow  especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.</p>
+				
+				<p>Usando la propiedad overflow con un valor distinto a visible, valor por defecto, creará un nuevo contexto de formatos de bloques. Esto es técnicamente necesario debido a que si un elemento flotante interceptara con otros forzaría a reajustar el contenido alrededor de los elementos que se interceden. El reajuste sucedería luego de cada desplazamiento, y llevaría a un desplazamiento demasiado lento.</p>
+
+
+				<h3 id="datos" style="margin-top: 20px;">Datos</h3>
+				<table class="table table-datos"> 
+					<tbody>
+						<tr>
+							<th>Definición</th>
+							<td>Controla el comportamiento de los contenidos que no caben en su elemento contenedor</td>
+						</tr>
+						<tr>
+							<th>Valores <br> permitidos</th>
+							<td>
+								Uno y sólo uno de los siguientes valores:
+								<ul>
+									<li>visible</li>
+									<li>hidden</li>
+									<li>scroll</li>
+									<li>auto</li>
+									<li>inherit</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th>Valor inicial</th>
+							<td>visible</td>
+						</tr>
+						<tr>
+							<th>Se aplica a</th>
+							<td>Elementos de bloque, celdas de tabla y elementos de tipo inline-block</td>
+						</tr>
+						<tr>
+							<th>Válida en</th>
+							<td>medios visuales</td>
+						</tr>
+						<tr>
+							<th>Se hereda</th>
+							<td>no</td>
+						</tr>
+						<tr class="nobottom">
+							<th>Definición en<br>el estándar</th>
+							<td><a href="http://www.w3.org/TR/CSS21/visufx.html#propdef-overflow">w3.org/TR/CSS21/visufx.html#propdef-overflow</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<h3 id="uso" style="margin-top: 20px;">Uso</h3>
+
+				<p>Si no se establece la propiedad width sobre un elemento, su tamaño se calcula automáticamente en función de si es un elemento de bloque o en línea, en función del tamaño del elemento contenedor en el que se encuentra y en función de algunos otros parámetros.</p>
+				
+				<p>De la misma forma, si no se establece la propiedad height sobre un elemento, su valor por defecto es auto, lo que significa que el navegador muestra ese elemento con la altura necesaria para que sus contenidos se vean completamente.</p>
+				
+				<p>En el diseño de páginas web es habitual establecer la anchura de los elementos mediante la propiedad width para crear las columnas de contenidos. Sin embargo, el uso de la propiedad height es mucho más limitado, ya que se suele dejar que el navegador calcule automáticamente la altura necesaria para cada elemento.</p>
+
+				<h3 id="ejemplo">Ejemplo</h3>
+
+				<p>El siguiente ejemplo muestra cómo el navegador establece automáticamente diferentes alturas para un mismo elemento en función de su anchura:</p>
+
+				<div class="codigo-ejemplo">
+					<div class="box" style="width: 90%; height: auto"><strong>width: 90%; height: auto</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor. Integer porttitor dui vel dui. Donec ornare adipiscing pede. Proin elementum augue ut magna.</div>
+
+					<div class="box" style="width: 50%; height: auto"><strong>width: 50%; height: auto</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor. Integer porttitor dui vel dui. Donec ornare adipiscing pede. Proin elementum augue ut magna.</div>
+				</div>
+
+				<p>El principal motivo por el que no suele establecerse la altura de los elementos es que normalmente no se conoce su contenido exacto. Si por ejemplo se utiliza un elemento 'div' para mostrar la descripción de un producto o el texto de una noticia, no es posible fijar la altura correcta de ese 'div', ya que variará para cada producto o noticia.</p>
+
+				<p>Cuando se establece una altura más pequeña que la necesaria para mostrar los contenidos de un elemento, el resultado es el que muestra el siguiente ejemplo:</p>
+
+				<div class="codigo-ejemplo">
+					<div class="box" style="width: 50%; height: 50px"><strong>width: 50%; height: 50px</strong> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce ut leo eu ipsum faucibus pretium. Donec iaculis lorem eleifend mi tempor porttitor. Integer porttitor dui vel dui. Donec ornare adipiscing pede. Proin elementum augue ut magna.</div>
+
+					<br><br><br>
+				</div>
+				<div class="clear"></div>
+
+				<h3 id="multimedia">Multimedia</h3>
+				<div class="col-xs-12 text-center" style="margin-top: 20px;">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/VwxGKpvW8Zk?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+
+				<h3 id="referencias" style="margin-top: 50px;">Referencias</h3>
+				<div class="referencias text-left">
+					<ul>
+						<li>
+							MDN web docs - marc-ferrer, developingo, Sebastianz, Sheppy, teoli, _0x (2015, 11, 12). overflow (excedente). Recuperado de: <a href="https://developer.mozilla.org/es/docs/Web/CSS/overflow">https://developer.mozilla.org/es/docs/Web/CSS/overflow</a>.
+						</li>
+						<li>
+							LIBROSWEB. Propiedad overflow. Recuperado de: <a href="http://librosweb.es/referencia/css/overflow.html">http://librosweb.es/referencia/css/overflow.html</a>.
+						</li>
+						<li>
+							Juan Andrés Núñez (2016, 02, 25). HTML y CSS Esencial #19 - Overflow (desbordamiento). Recuperado de: <a href="https://www.youtube.com/watch?v=_uCDCpD2IYE">https://www.youtube.com/watch?v=_uCDCpD2IYE</a>.
+						</li>
+					</ul>
+				</div>
+			</div>
+			<aside class="col-sm-3 ml-sm-auto">
+				<div class="aside-module">
+					<h4>Menu</h4>
+					<ul class="list-menu">
+						<li>
+							<a class="nav-link" href="#datos">Datos</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#uso">Uso</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#ejemplo">Ejemplo</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#multimedia">Multimedia</a>
+						</li>
+						<li>
+							<a class="nav-link" href="#referencias">Referencias</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+	</div>
+	<footer>
+		<p>Desarrolado por: <b>Sebastian Leiva</b></p>
+		<p>Universidad nacional abierta y a distancia</p>
+		<p>UNAD</p>
+		<p>2017</p>
+		<center><a href="https://www.cerotec.net/estadisticas-112865/sebadl28.github.io" title="más información"><img src="https://www.cerotec.net/contador.php?t=6&s=6&i=112865" alt="Contador de visitas y estadísticas"></a></center>
+	</footer>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
